@@ -1,0 +1,7 @@
+---
+- name: Install build-essential
+  ansible.builtin.apt:
+    pkg:
+    - build-essential
+  become: true
+  when: build_essential
